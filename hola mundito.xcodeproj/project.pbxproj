@@ -6,31 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		356D292A2E50077300A62BDF /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 356D29202E50077300A62BDF /* info.plist */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		356D29202E50077300A62BDF /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		35D14A372E41851B009F7701 /* hola mundito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hola mundito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		35FCF2132E500500002E0C0D /* Exceptions for "hola mundito" folder in "hola mundito" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				actividades/starjedi.ttf,
-			);
-			target = 35D14A362E41851B009F7701 /* hola mundito */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		35D14A392E41851B009F7701 /* hola mundito */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				35FCF2132E500500002E0C0D /* Exceptions for "hola mundito" folder in "hola mundito" target */,
-			);
 			path = "hola mundito";
 			sourceTree = "<group>";
 		};
@@ -52,7 +34,6 @@
 			children = (
 				35D14A392E41851B009F7701 /* hola mundito */,
 				35D14A382E41851B009F7701 /* Products */,
-				356D29202E50077300A62BDF /* info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,7 +109,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				356D292A2E50077300A62BDF /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +256,7 @@
 				DEVELOPMENT_TEAM = L45K4QVPUS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hola-mundito-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +285,7 @@
 				DEVELOPMENT_TEAM = L45K4QVPUS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hola-mundito-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
