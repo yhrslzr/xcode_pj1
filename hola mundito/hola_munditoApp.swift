@@ -11,7 +11,11 @@ import SwiftUI
 struct hola_munditoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            // texto localizado, var de conf global
+            FuentecitaView()
+                .environment(\.locale, .init(identifier: "en"))
+            // Product -> Scheme -> Edit Scheme -> Run -> Options -> App Language
         }
     }
 }

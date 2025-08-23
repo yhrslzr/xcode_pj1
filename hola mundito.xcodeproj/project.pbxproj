@@ -6,7 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		357D149B2E5404A000AA5C88 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 357D14992E5404A000AA5C88 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		357D149A2E5404A000AA5C88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		357D149D2E5404B100AA5C88 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		357D149F2E5404B300AA5C88 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		35D14A372E41851B009F7701 /* hola mundito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hola mundito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +39,7 @@
 		35D14A2E2E41851B009F7701 = {
 			isa = PBXGroup;
 			children = (
+				357D14992E5404A000AA5C88 /* Localizable.strings */,
 				35D14A392E41851B009F7701 /* hola mundito */,
 				35D14A382E41851B009F7701 /* Products */,
 			);
@@ -91,6 +99,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
+				ja,
 			);
 			mainGroup = 35D14A2E2E41851B009F7701;
 			minimizedProjectReferenceProxies = 1;
@@ -109,6 +119,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357D149B2E5404A000AA5C88 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +134,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		357D14992E5404A000AA5C88 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				357D149A2E5404A000AA5C88 /* en */,
+				357D149D2E5404B100AA5C88 /* es-419 */,
+				357D149F2E5404B300AA5C88 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		35D14A402E41851C009F7701 /* Debug */ = {

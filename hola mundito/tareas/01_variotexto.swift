@@ -45,17 +45,58 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct TextitoView: View {
     var body: some View {
         VStack{
             // Fila 1 (Amarillo en verde, Azul en rojo y Naranja en Azul)
             HStack{
                 Text("Amarillo").foregroundStyle(.green)
+                Text("Azul").foregroundStyle(.red)
+                Text("Naranja").foregroundStyle(.blue)
             }
+            // fila 2: Negro, rojo
+            HStack{
+                Text("NEGRO")
+                    .padding()
+                    .background(Color.purple)
+                    .clipShape(Rectangle())
+                    .frame(maxWidth: .infinity)
+                
+                Text("rojo".uppercased())
+                    .padding([.leading, .trailing], 18)
+                    .foregroundStyle(.red)
+                    .background(Color.cyan)
+                    .clipShape(RoundedRectangle(cornerRadius: 30))
+                    .frame(maxWidth: .infinity)
+            }
+            .multilineTextAlignment(.center)
+            
+            // fila 3: verde
+            HStack{
+                Text("Verde")
+                    .padding()
+                    .font(.system(size: 22, weight: .bold))
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.orange)
+            }
+            
+            // fila 4: morado
+            HStack(){
+                Text("Morado")
+                    .padding()
+                    .font(.system(size: 30))
+                    .clipShape(Rectangle())
+                    .background(LinearGradient(gradient: Gradient(colors: [.green, .orange]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .border(Color.purple, width: 3)
+            }
+            
+            // fila 5:
+            
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
 #Preview {
-    SwiftUIView()
+    TextitoView()
 }
