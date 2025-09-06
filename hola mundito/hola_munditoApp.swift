@@ -13,8 +13,8 @@ struct hola_munditoApp: App {
         WindowGroup {
 //            ContentView()
             // texto localizado, var de conf global
-            FuentecitaView()
-                .environment(\.locale, .init(identifier: "en"))
+//            FuentecitaView()
+//                .environment(\.locale, .init(identifier: "en"))
             // Product -> Scheme -> Edit Scheme -> Run -> Options -> App Language
         }
     }
