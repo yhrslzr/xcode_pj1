@@ -9,17 +9,21 @@ import SwiftUI
 
 struct BotonView: View {
     
-    @State private var mod: CGFloat = 3.0
+    @State private var modtam: CGFloat = 3.0
+    @State private var modrot: CGFloat = 0
     
     var body: some View {
         Image(systemName: "suit.heart")
-            .foregroundColor(.pink)
-            .scaleEffect(mod)
+            .foregroundColor(.black)
+            .scaleEffect(modtam)
+            .rotationEffect(Angle(degrees: modrot))
         HStack{
             
             Button(action: {
                 
-                mod += 1.0
+                withAnimation(){
+                    modtam += 1.0
+                }
                 
             }) {
                 Text("Aumentar :3")
@@ -31,13 +35,42 @@ struct BotonView: View {
             
             Button(action: {
                 
-                mod -= 1.0
+                withAnimation(){
+                    modtam -= 1.0
+                }
                 
             }) {
                 Text("Disminuir c:")
                     .padding(10)
             }
-            .background(Color.cyan)
+            .background(Color.red)
+            .cornerRadius(40)
+            .foregroundColor(.white)
+        }
+        
+        HStack{
+            
+            Button(action: {
+                
+                modrot -= 10
+                
+            }) {
+                Text("Girar izq :3")
+                    .padding(10)
+            }
+            .background(Color.yellow)
+            .cornerRadius(40)
+            .foregroundColor(.white)
+            
+            Button(action: {
+                
+                modrot += 10
+                
+            }) {
+                Text("Girar der c:")
+                    .padding(10)
+            }
+            .background(Color.green)
             .cornerRadius(40)
             .foregroundColor(.white)
         }
