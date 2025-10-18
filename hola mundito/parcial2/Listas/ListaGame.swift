@@ -7,7 +7,9 @@
 
 import Foundation
 struct Game: Identifiable{
+    
     let id: Int
+    let uuid: UUID = UUID() // valor ID único-universal
     let image: String
     let name: String
     let console: String

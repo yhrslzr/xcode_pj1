@@ -24,7 +24,7 @@ struct ListaCardView: View {
             
             VStack(alignment: .leading, spacing: 0 ){
                 Text(name)
-                    .foregroundColor(Color.purple)
+                    .foregroundColor(Color.teal)
                     .font(.headline)
                     .padding(.bottom)
                 HStack{
@@ -38,23 +38,25 @@ struct ListaCardView: View {
                 HStack(){
                     Spacer()
                     Button(action: {
-                        print("hola")
+                        print("Has adquirido \(name)")
                     },
                            label:{
                         Text("Comprar")
                             .padding(.horizontal)
                             .foregroundColor(Color.white)
-                            .background(Color.purple)
+                            .background(Color.teal)
                             .cornerRadius(4)
                             .padding(.vertical)
                     })
                 }
             }
+        }.onAppear(){
+            print("\(name)")
         }
     }
 }
 struct ListaCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ListaCardView(image: "mario", name: "Mario Bros F", console: "Nintendo Switch", price: "1200.00")
+        ListaCardView(image: "mario", name: "Mario Bros.", console: "Nintendo Switch", price: "1200.00")
     }
 }
