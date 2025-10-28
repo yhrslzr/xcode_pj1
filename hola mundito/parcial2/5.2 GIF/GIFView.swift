@@ -60,6 +60,7 @@ public class UIGIFImage: UIView {
     private var onComplete: (() -> Void)? = nil
     private var data: Data?
     private var name: String?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -117,7 +118,10 @@ public class UIGIFImage: UIView {
     }
     
     private func updateWithImage(_ getImage: @escaping () -> AnimationImages?) {
-        DispatchQueue.global(qos: .userInteractive).async {
+        DispatchQueue.global(qos: .userInteractive)
+            .async
+        {
+            
             if let animationImages = getImage() {
                 DispatchQueue.main.async {
                     CATransaction.begin()
@@ -135,8 +139,10 @@ public class UIGIFImage: UIView {
             else {
                 self.imageView.image = nil
             }
+            
         }
     }
+    
     private func initView(
         repetitions: Int? = nil,
         onComplete: (() -> Void)? = nil

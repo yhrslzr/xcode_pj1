@@ -55,6 +55,7 @@ struct ListaCardView: View {
         }
     }
 }
+
 struct ListaCardView_Previews: PreviewProvider {
     static var previews: some View {
         ListaCardView(image: "mario", name: "Mario Bros.", console: "Nintendo Switch", price: "1200.00")

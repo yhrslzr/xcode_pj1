@@ -25,3 +25,4 @@ struct GamesViewModel {
         return games
     }
 }
+

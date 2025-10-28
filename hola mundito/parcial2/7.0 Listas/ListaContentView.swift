@@ -10,6 +10,7 @@ import SwiftUI
 struct ListaContentView: View {
     
     // let gameVM: GamesViewModel = GamesViewModel()
+    
     @State var gameVM: [Game] = GamesViewModel().getGamesList()
     
     

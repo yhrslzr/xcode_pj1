@@ -15,3 +15,4 @@ struct Game: Identifiable{
     let console: String
     let price: Float
 }
+
